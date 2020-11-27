@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15BB39A2256E237A003E8297 /* BGLDataUtil+ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB39A1256E237A003E8297 /* BGLDataUtil+ContentView.swift */; };
+		15BB39A6256EC5ED003E8297 /* MeasurementListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB39A5256EC5ED003E8297 /* MeasurementListItemView.swift */; };
+		15BB39A9256EC724003E8297 /* BGLDataUtil+MeasurementListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB39A8256EC724003E8297 /* BGLDataUtil+MeasurementListItemView.swift */; };
+		15BB39AC256EE1E2003E8297 /* BloodGlucoseInputsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB39AB256EE1E2003E8297 /* BloodGlucoseInputsView.swift */; };
+		15BB39AF256EE28D003E8297 /* NumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB39AE256EE28D003E8297 /* NumberField.swift */; };
+		15BB3A1F25704D90003E8297 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB3A1E25704D90003E8297 /* BarChartView.swift */; };
+		15C460E5256CCEE6009E764A /* Blood_Glucose_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C460E4256CCEE6009E764A /* Blood_Glucose_TrackerApp.swift */; };
+		15C460E7256CCEE6009E764A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C460E6256CCEE6009E764A /* ContentView.swift */; };
+		15C460E9256CCEE7009E764A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C460E8256CCEE7009E764A /* Assets.xcassets */; };
+		15C460EC256CCEE7009E764A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C460EB256CCEE7009E764A /* Preview Assets.xcassets */; };
+		15C460EE256CCEE7009E764A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C460ED256CCEE7009E764A /* Persistence.swift */; };
+		15C460F1256CCEE7009E764A /* Blood_Glucose_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15C460EF256CCEE7009E764A /* Blood_Glucose_Tracker.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15BB39A1256E237A003E8297 /* BGLDataUtil+ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BGLDataUtil+ContentView.swift"; sourceTree = "<group>"; };
+		15BB39A5256EC5ED003E8297 /* MeasurementListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementListItemView.swift; sourceTree = "<group>"; };
+		15BB39A8256EC724003E8297 /* BGLDataUtil+MeasurementListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BGLDataUtil+MeasurementListItemView.swift"; sourceTree = "<group>"; };
+		15BB39AB256EE1E2003E8297 /* BloodGlucoseInputsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodGlucoseInputsView.swift; sourceTree = "<group>"; };
+		15BB39AE256EE28D003E8297 /* NumberField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberField.swift; sourceTree = "<group>"; };
+		15BB3A1E25704D90003E8297 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		15C460E1256CCEE6009E764A /* Blood Glucose Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blood Glucose Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15C460E4256CCEE6009E764A /* Blood_Glucose_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blood_Glucose_TrackerApp.swift; sourceTree = "<group>"; };
+		15C460E6256CCEE6009E764A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		15C460E8256CCEE7009E764A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15C460EB256CCEE7009E764A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		15C460ED256CCEE7009E764A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		15C460F0256CCEE7009E764A /* Blood_Glucose_Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Blood_Glucose_Tracker.xcdatamodel; sourceTree = "<group>"; };
+		15C460F2256CCEE7009E764A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15C460F3256CCEE7009E764A /* Blood_Glucose_Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Blood_Glucose_Tracker.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15C460DE256CCEE6009E764A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15BB39B1256EE4A9003E8297 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				15BB39A5256EC5ED003E8297 /* MeasurementListItemView.swift */,
+				15BB39AB256EE1E2003E8297 /* BloodGlucoseInputsView.swift */,
+				15BB39AE256EE28D003E8297 /* NumberField.swift */,
+				15BB3A1E25704D90003E8297 /* BarChartView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		15BB39B2256EE51A003E8297 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				15C460ED256CCEE7009E764A /* Persistence.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		15BB39B3256EE544003E8297 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15BB39A1256E237A003E8297 /* BGLDataUtil+ContentView.swift */,
+				15BB39A8256EC724003E8297 /* BGLDataUtil+MeasurementListItemView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		15C460D8256CCEE6009E764A = {
+			isa = PBXGroup;
+			children = (
+				15C460E3256CCEE6009E764A /* Blood Glucose Tracker */,
+				15C460E2256CCEE6009E764A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15C460E2256CCEE6009E764A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15C460E1256CCEE6009E764A /* Blood Glucose Tracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15C460E3256CCEE6009E764A /* Blood Glucose Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				15BB39B3256EE544003E8297 /* Extensions */,
+				15BB39B2256EE51A003E8297 /* Persistence */,
+				15BB39B1256EE4A9003E8297 /* Custom Views */,
+				15C460E4256CCEE6009E764A /* Blood_Glucose_TrackerApp.swift */,
+				15C460E6256CCEE6009E764A /* ContentView.swift */,
+				15C460E8256CCEE7009E764A /* Assets.xcassets */,
+				15C460F2256CCEE7009E764A /* Info.plist */,
+				15C460F3256CCEE7009E764A /* Blood_Glucose_Tracker.entitlements */,
+				15C460EF256CCEE7009E764A /* Blood_Glucose_Tracker.xcdatamodeld */,
+				15C460EA256CCEE7009E764A /* Preview Content */,
+			);
+			path = "Blood Glucose Tracker";
+			sourceTree = "<group>";
+		};
+		15C460EA256CCEE7009E764A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				15C460EB256CCEE7009E764A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15C460E0256CCEE6009E764A /* Blood Glucose Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15C460F6256CCEE7009E764A /* Build configuration list for PBXNativeTarget "Blood Glucose Tracker" */;
+			buildPhases = (
+				15C460DD256CCEE6009E764A /* Sources */,
+				15C460DE256CCEE6009E764A /* Frameworks */,
+				15C460DF256CCEE6009E764A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blood Glucose Tracker";
+			productName = "Blood Glucose Tracker";
+			productReference = 15C460E1256CCEE6009E764A /* Blood Glucose Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15C460D9256CCEE6009E764A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					15C460E0256CCEE6009E764A = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 15C460DC256CCEE6009E764A /* Build configuration list for PBXProject "Blood Glucose Tracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15C460D8256CCEE6009E764A;
+			productRefGroup = 15C460E2256CCEE6009E764A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15C460E0256CCEE6009E764A /* Blood Glucose Tracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15C460DF256CCEE6009E764A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C460EC256CCEE7009E764A /* Preview Assets.xcassets in Resources */,
+				15C460E9256CCEE7009E764A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15C460DD256CCEE6009E764A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BB39A9256EC724003E8297 /* BGLDataUtil+MeasurementListItemView.swift in Sources */,
+				15BB39A2256E237A003E8297 /* BGLDataUtil+ContentView.swift in Sources */,
+				15C460EE256CCEE7009E764A /* Persistence.swift in Sources */,
+				15C460E7256CCEE6009E764A /* ContentView.swift in Sources */,
+				15C460F1256CCEE7009E764A /* Blood_Glucose_Tracker.xcdatamodeld in Sources */,
+				15BB39AF256EE28D003E8297 /* NumberField.swift in Sources */,
+				15BB39A6256EC5ED003E8297 /* MeasurementListItemView.swift in Sources */,
+				15BB3A1F25704D90003E8297 /* BarChartView.swift in Sources */,
+				15C460E5256CCEE6009E764A /* Blood_Glucose_TrackerApp.swift in Sources */,
+				15BB39AC256EE1E2003E8297 /* BloodGlucoseInputsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		15C460F4256CCEE7009E764A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15C460F5256CCEE7009E764A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		15C460F7256CCEE7009E764A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Blood Glucose Tracker/Blood_Glucose_Tracker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Blood Glucose Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = B3NH98QL9A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Blood Glucose Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joshrootdev.Blood-Glucose-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		15C460F8256CCEE7009E764A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Blood Glucose Tracker/Blood_Glucose_Tracker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Blood Glucose Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = B3NH98QL9A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Blood Glucose Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joshrootdev.Blood-Glucose-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15C460DC256CCEE6009E764A /* Build configuration list for PBXProject "Blood Glucose Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15C460F4256CCEE7009E764A /* Debug */,
+				15C460F5256CCEE7009E764A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15C460F6256CCEE7009E764A /* Build configuration list for PBXNativeTarget "Blood Glucose Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15C460F7256CCEE7009E764A /* Debug */,
+				15C460F8256CCEE7009E764A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		15C460EF256CCEE7009E764A /* Blood_Glucose_Tracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				15C460F0256CCEE7009E764A /* Blood_Glucose_Tracker.xcdatamodel */,
+			);
+			currentVersion = 15C460F0256CCEE7009E764A /* Blood_Glucose_Tracker.xcdatamodel */;
+			path = Blood_Glucose_Tracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 15C460D9256CCEE6009E764A /* Project object */;
+}

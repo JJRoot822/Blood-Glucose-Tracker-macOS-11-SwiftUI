@@ -8,31 +8,30 @@
 import SwiftUI
 
 struct BarChartView: View {
-    var data: [BGLMeasurement]
+    var data:       [BGLMeasurement]
     var dateFormat: DateFormatter
     
     @State var barColor: Color = .white
+    @State var animate:  Bool  = false
     
     var body: some View {
         VStack(spacing: 20) {
             ColorPicker("Dataset Color", selection: $barColor, supportsOpacity: false)
                 .frame(width: 175, height: 25)
-            withAnimation {
-                ScrollView(.horizontal) {
-                    HStack(alignment: .bottom, spacing: 10) {
-                        ForEach(data, id: \.id) { measurement in
-                            VStack(spacing: 10) {
-                                Text("\(measurement.level)")
-                                    .fontWeight(.black)
-                                Capsule(style: .circular)
-                                    .frame(width: 45, height: CGFloat(Double("\(measurement.level)")! * 1.5))
-                                    .foregroundColor(barColor)
-                                Text("\(measurement.dateMeasured!, formatter: dateFormat)")
-                                    .fontWeight(.bold)
-                            }
+            ScrollView(.horizontal) {
+                HStack(alignment: .bottom, spacing: 10) {
+                    ForEach(data, id: \.id) { measurement in
+                        VStack(spacing: 10) {
+                            Text("\(measurement.level)")
+                                .fontWeight(.black)
+                            Capsule(style: .circular)
+                                .frame(width: 45, height: CGFloat(Double("\(measurement.level)")! * 1.5))
+                                .foregroundColor(barColor)
+                            Text("\(measurement.dateMeasured!, formatter: dateFormat)")
+                                .fontWeight(.bold)
                         }
-                        
                     }
+                    
                 }
             }
         }

@@ -15,10 +15,12 @@ struct ContentView: View {
     @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \BGLMeasurement.dateMeasured, ascending: true)], animation: .default)
     var items: FetchedResults<BGLMeasurement>
 
-    @State var level: String = ""
-    @State var dateMeasured: Date = Date()
-    @State var isPresented: Bool = false
-    @State var selection: Int = 0
+    @State var level:        String = ""
+    @State var dateMeasured: Date   = Date()
+    @State var isPresented:  Bool   = false
+    @State var selection:    Int    = 0
+    @State var barColor:     Color  = .white
+    @State var animate:      Bool   = false
     
     var body: some View {
         VStack {
@@ -44,7 +46,8 @@ struct ContentView: View {
                 .accessibility(label: Text("Visualize Blood Glucose Measurment Data"))
                 .sheet(isPresented: $isPresented) {
                     BarChartView(data: getDataArray(), dateFormat: getBarDateFormatter())
-                        .frame(width: 800)
+                        .frame(width: 900)
+                    
                     Button("Close") {
                         self.isPresented = false
                     }
